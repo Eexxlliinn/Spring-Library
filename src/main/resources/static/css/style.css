@@ -1,0 +1,199 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0; /* Светлый серый фон */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333333; /* Темный серый текст */
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #4CAF50; /* Зеленый заголовок */
+    margin-bottom: 20px;
+    margin-top: -20px; /* Отрицательный отступ сверху */
+}
+
+p {
+    color: #666666; /* Серый текст второго уровня */
+    margin-bottom: 15px;
+}
+
+a {
+    color: #2196F3; /* Голубая ссылка */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #1565C0; /* Цвет при наведении */
+}
+
+
+.menu-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2196F3; /* Голубая кнопка */
+    color: #ffffff; /* Белый текст кнопки */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.menu-button:hover {
+    color: white;
+    background-color: #1565C0; /* Цвет при наведении на кнопку */
+}
+/* Добавленные стили для формы и сообщения об ошибке */
+
+#loginform {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-bottom: 10px;
+    color: #333333; /* Темный серый текст для меток формы */
+}
+
+form input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #2196F3;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1565C0;
+}
+
+.error-message {
+    color: #FF0000;
+    margin-top: 10px;
+    text-align: center;
+}
+/* Добавленные стили для таблицы и кнопки "Back" */
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.back-button:hover {
+    background-color: #1565C0;
+}
+/* Стили для выпадающего списка */
+
+.styled-select {
+    display: inline-block;
+    position: relative;
+    width: 200px; /* Установите ширину по вашему желанию */
+}
+
+.styled-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd; /* Линия границы */
+    border-radius: 5px; /* Скругление углов */
+    background-color: #fff; /* Цвет фона */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+    cursor: pointer;
+}
+
+/* Стили для стрелки вниз в выпадающем списке */
+
+.styled-select::after {
+    content: '\25BC'; /* Юникод символ для стрелки вниз */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #555; /* Цвет стрелки */
+    pointer-events: none;
+}
+/* Стили для кнопки Save */
+
+.save-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745; /* Зеленый цвет кнопки */
+    color: #fff; /* Белый текст кнопки */
+    text-decoration: none;
+    border-radius: 8px; /* Скругление углов */
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #218838; /* Изменение цвета при наведении на кнопку */
+}
+.client-info {
+    background-color: #ffffff; /* Белый фон блока с информацией */
+    border: 1px solid #ddd; /* Рамка вокруг блока */
+    padding: 20px;
+    border-radius: 8px; /* Скругление углов блока */
+    margin-top: 20px;
+}
+
+.client-info p {
+    margin: 10px 0;
+}
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<h1>Library</h1>
+<p>Click <a th:href="@{/books}">here</a> to see all books</p>
+<p>Click <a th:href="@{/create-book}">here</a> to create a new book</p>
+<p>Click <a th:href="@{/update-book}">here</a> to update a book</p>
+<p>Click <a th:href="@{/delete-book}">here</a> to delete a book</p>
+<br>
+<p>Click <a th:href="@{/borrowed-books}">here</a> to see all borrowed books</p>
+<p>Click <a th:href="@{/take-book}">here</a> to take a book</p>
+<p>Click <a th:href="@{/return-book}">here</a> to return a book</p>
+
+
+
+<a th:href="@{/logout}" class="menu-button">Logout</a>
+</body>
+</html>

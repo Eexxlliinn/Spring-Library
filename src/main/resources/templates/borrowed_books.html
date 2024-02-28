@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<h1>Borrowed Books</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Borrowed Date</th>
+        <th>Borrowed Time</th>
+        <th>Return Date</th>
+        <th>Return Time</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="borrowedBook : ${borrowedBooks}">
+        <td th:text="${borrowedBook.getBook().getTitle()}"></td>
+        <td th:text="${borrowedBook.getBorrowedDate()}"></td>
+        <td th:text="${borrowedBook.getBorrowedTime()}"></td>
+        <td th:text="${borrowedBook.getReturnDate()}"></td>
+        <td th:text="${borrowedBook.getReturnTime()}"></td>
+
+    </tr>
+    </tbody>
+</table>
+<a th:href="@{/}">Back</a>
+</body>
+</html>

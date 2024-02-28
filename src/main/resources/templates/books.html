@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<h1>Books</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>ISBN</th>
+        <th>Title</th>
+        <th>Genre</th>
+        <th>Description</th>
+        <th>Author</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="book : ${books}">
+        <td th:text="${book.getIsbn()}"></td>
+        <td th:text="${book.getTitle()}"></td>
+        <td th:text="${book.getGenre()}"></td>
+        <td th:text="${book.getDescription()}"></td>
+        <td th:text="${book.getAuthor()}"></td>
+
+    </tr>
+    </tbody>
+</table>
+<a th:href="@{/}">Back</a>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<h1>Return a book</h1>
+
+<form th:action="@{/return-book}" method="post" id="returnBook">
+    <fieldset>
+        <legend>Select Book</legend>
+
+        <label for="borrowedBook">Book:</label>
+        <div class="styled-select">
+            <select id="borrowedBook" name="borrowedBook" required>
+                <option th:each="borrowedBook : ${borrowedBooks}" th:value="${borrowedBook.getBook().getId()}" th:text="${borrowedBook.getBook().getTitle()}"></option>
+            </select>
+        </div>
+
+    </fieldset>
+    <a th:href="@{/}">Back</a>
+
+    <input type="submit" class="save-button" value="Return">
+
+</form>
+</body>
+</html>
