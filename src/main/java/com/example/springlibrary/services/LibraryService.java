@@ -83,9 +83,8 @@ public class LibraryService {
 
     }
 
-    @Async
     @Transactional
-    public CompletableFuture<Void> addNewBook(Long id) {
+    public void addNewBook(Long id) {
         Optional<Book> optionalBook = bookReporisoty.findById(id);
         if (optionalBook.isPresent()) {
             Book book = optionalBook.get();
@@ -94,8 +93,6 @@ public class LibraryService {
         } else {
             throw new EntityNotFoundException("Book not found with id: " + id);
         }
-
-        return  CompletableFuture.completedFuture(null);
     }
 
     @Transactional
